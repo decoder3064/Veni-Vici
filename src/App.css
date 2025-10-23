@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
+.app-container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banlist-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.art-display {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.art-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.art-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.art-info {
+  text-align: left;
+  margin: 20px 0;
 }
 
-.card {
-  padding: 2em;
+.ban-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ban-btn {
+  background: #ff6b6b;
+  color: white;
+}
+
+.shuffle-btn {
+  background: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
 }
