@@ -1,67 +1,255 @@
-.app-container {
-  max-width: 1200px;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: #f5f3f0;
+  min-height: 100vh;
   padding: 20px;
+  color: #2c2c2c;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .app-header {
   text-align: center;
-  margin-bottom: 30px;
+  color: #2c2c2c;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d4c5b9;
+  padding-bottom: 20px;
 }
 
+/* Ban List Styles */
 .banlist-container {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #f5f5f5;
-  border-radius: 8px;
+  margin-bottom: 40px;
 }
 
+.banlist {
+  background: #ffffff;
+  border: 1px solid #d4c5b9;
+  padding: 30px;
+}
+
+.banlist h2 {
+  color: #2c2c2c;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ban-section {
+  margin-bottom: 25px;
+}
+
+.ban-section h3 {
+  color: #5a5a5a;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ban-section p {
+  color: #999;
+  font-style: italic;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.ban-section ul {
+  list-style: none;
+  border-left: 2px solid #d4c5b9;
+  padding-left: 20px;
+}
+
+.ban-section li {
+  background: transparent;
+  padding: 10px 15px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s;
+}
+
+.ban-section li:hover {
+  background: #fafafa;
+  padding-left: 20px;
+}
+
+.ban-section li button {
+  background: transparent;
+  color: #8b4513;
+  border: 1px solid #8b4513;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Georgia', serif;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ban-section li button:hover {
+  background: #8b4513;
+  color: white;
+}
+
+/* Art Display Styles */
 .art-display {
   text-align: center;
 }
 
 .art-card {
   background: white;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  border: 1px solid #d4c5b9;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.art-title {
+  color: #2c2c2c;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .art-image {
   max-width: 100%;
   height: auto;
-  max-height: 500px;
-  margin: 20px 0;
+  max-height: 600px;
+  margin: 30px 0;
+  border: 8px solid #f5f3f0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
 }
 
 .art-info {
   text-align: left;
-  margin: 20px 0;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 25px;
+  background: #fafafa;
+  border-left: 3px solid #d4c5b9;
 }
 
+.art-detail {
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #5a5a5a;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+}
+
+.art-detail strong {
+  color: #2c2c2c;
+  margin-right: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* Button Styles */
 .ban-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
-  margin-top: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
+  padding: 10px 25px;
+  border: 1px solid #2c2c2c;
+  background: transparent;
   cursor: pointer;
+  font-size: 0.9rem;
+  font-family: 'Georgia', serif;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2c2c2c;
+}
+
+.btn:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 .ban-btn {
-  background: #ff6b6b;
+  border-color: #8b4513;
+  color: #8b4513;
+}
+
+.ban-btn:hover {
+  background: #8b4513;
   color: white;
 }
 
 .shuffle-btn {
-  background: #4CAF50;
+  background: #2c2c2c;
   color: white;
-  font-size: 18px;
-  padding: 15px 30px;
+  font-size: 1rem;
+  padding: 15px 50px;
+  margin-top: 20px;
+  border: none;
+}
+
+.shuffle-btn:hover {
+  background: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+.loading {
+  background: white;
+  padding: 80px 40px;
+  border: 1px solid #d4c5b9;
+  font-size: 1.2rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    font-size: 1.8rem;
+  }
+
+  .art-card {
+    padding: 25px;
+  }
+
+  .art-title {
+    font-size: 1.4rem;
+  }
+
+  .ban-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
