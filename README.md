@@ -1,10 +1,10 @@
-Web Development Project 4 - *Name of App Here*
+Web Development Project 4 - *Muho!*
 
-Submitted by: **Your Name Here**
+Submitted by: **David Reyes**
 
-This web app: **insert description**
+This web app: **Museum random artifact finder**
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
